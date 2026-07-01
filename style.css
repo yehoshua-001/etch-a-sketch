@@ -22,7 +22,13 @@ body {
 }
 
 .squares {
-    flex: 0 0 6.25%;
-    height: 6.25%;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
     border: 1px solid black;
+}
+
+.squares:hover {
+    background-color: black;
+    transition: background-color 0.3s ease-in-out;
 }
